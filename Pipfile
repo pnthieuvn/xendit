@@ -1,0 +1,26 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+selenium = '==3.141.0'
+webdriver_manager = '==1.7'
+moment = '==0.8.2'
+pytz = '==2021.1'
+tzlocal = '==2.1'
+behave = "*"
+wand = "*"
+pillow = "*"
+opencv-python = "==3.4.13.47"
+pytesseract = "*"
+tesseract = "*"
+tesserocr = "*"
+gpyocr = "*"
+allure-behave = "*"
+
+[scripts]
+behave = "behave -f allure_behave.formatter:AllureFormatter -o ./report"
+open_report = "allure serve ./report"
