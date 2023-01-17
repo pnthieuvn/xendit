@@ -1,6 +1,5 @@
 # Project exclude paths
 /venv/
-/temp/
 /report/
 .idea
 .DS*
